@@ -122,10 +122,7 @@ A Python test script is provided to verify all backend endpoints.
   Get Products: PASSED (Quantity = 15)
   ```
 
-#### **Test Run Screenshot**
-Below is a screenshot of a successful test run:
 
-![API Test Script Passing Example](./test/test_api_passed.png)
 
 #### **Troubleshooting**
 - If you see 404 errors, make sure your backend exposes both `/register` and `/api/auth/register` (and similar for other endpoints).
