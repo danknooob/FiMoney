@@ -122,6 +122,8 @@ A Python test script is provided to verify all backend endpoints.
   Get Products: PASSED (Quantity = 15)
   ```
 
+
+
 #### **Troubleshooting**
 - If you see 404 errors, make sure your backend exposes both `/register` and `/api/auth/register` (and similar for other endpoints).
 - If you see 401 errors, check your JWT secret and token handling.

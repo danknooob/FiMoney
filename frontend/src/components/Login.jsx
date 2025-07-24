@@ -42,28 +42,34 @@ function Login() {
 
   return (
     <div className="flex justify-center items-center w-full min-h-[60vh]">
-      <form className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md flex flex-col gap-4" onSubmit={handleSubmit}>
-        <h2 className="text-2xl font-bold text-center text-gray-800 mb-2">Login</h2>
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-          required
-          className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={e => setPassword(e.target.value)}
-          required
-          className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-        />
+      <form className="card bg-base-100 shadow-xl p-8 w-full max-w-md flex flex-col gap-4" onSubmit={handleSubmit}>
+        <h2 className="text-2xl font-bold text-center text-blue-700 mb-2">Login</h2>
+        <label className="form-control w-full">
+          <span className="label-text">Email</span>
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            required
+            className="input input-bordered w-full"
+          />
+        </label>
+        <label className="form-control w-full">
+          <span className="label-text">Password</span>
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+            required
+            className="input input-bordered w-full"
+          />
+        </label>
         <button
           type="submit"
           disabled={loading}
-          className="bg-blue-600 text-white font-semibold py-2 rounded hover:bg-blue-700 transition disabled:opacity-60"
+          className="btn btn-primary w-full"
         >
           {loading ? 'Logging in...' : 'Login'}
         </button>
