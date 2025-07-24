@@ -9,6 +9,7 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
 function ProductList() {
   const { items: products, loading, error, page, hasMore } = useSelector(state => state.products);
   const token = useSelector(state => state.auth.token);
+  const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -29,12 +30,27 @@ function ProductList() {
     }
   };
 
-  useEffect(() => { fetchProducts(page); }, [page]);
+  useEffect(() => {
+    if (isAuthenticated) {
+      fetchProducts(page);
+    }
+    // eslint-disable-next-line
+  }, [page, isAuthenticated]);
 
   const handleLogout = () => {
     dispatch(logout());
     navigate('/login');
   };
+
+  if (!isAuthenticated) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[60vh]">
+        <div className="alert alert-warning shadow-lg w-full max-w-md">
+          <span className="text-lg font-semibold">You must login to view the products.</span>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="w-full max-w-6xl mx-auto">
