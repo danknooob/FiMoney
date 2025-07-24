@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
-  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background: linear-gradient(120deg, #f8fafc 0%, #e0f2fe 100%);
   min-height: 100vh;
 }
 
@@ -12,11 +12,11 @@ body {
 }
 
 .app-header {
-  background: #22223b;
-  color: #f2e9e4;
+  background: transparent;
+  color: #22223b;
   padding: 2rem 0 1rem 0;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(34,34,59,0.08);
+  box-shadow: none;
 }
 
 .app-header h1 {
@@ -29,7 +29,7 @@ body {
 .subtitle {
   margin-top: 0.5rem;
   font-size: 1.1rem;
-  color: #c9ada7;
+  color: #3b82f6;
 }
 
 main {
@@ -41,13 +41,24 @@ main {
 }
 
 .app-footer {
-  background: #22223b;
-  color: #c9ada7;
+  background: linear-gradient(90deg, #e0f2fe 0%, #f8fafc 100%);
+  color: #2563eb;
   text-align: center;
-  padding: 1rem 0;
-  font-size: 1rem;
+  padding: 1.5rem 0 1rem 0;
+  font-size: 1.1rem;
   letter-spacing: 1px;
-  box-shadow: 0 -2px 8px rgba(34,34,59,0.08);
+  box-shadow: 0 -2px 8px rgba(34,34,59,0.04);
+  border-top: 2px solid #bae6fd;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+button, .btn {
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 2px 8px rgba(59,130,246,0.08);
+}
+button:active, .btn:active {
+  transform: scale(0.97);
 }
 
 @media (max-width: 600px) {
