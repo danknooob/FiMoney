@@ -35,7 +35,9 @@ function Navbar() {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/" className="flex items-center space-x-3">
           <FaBoxOpen className="text-blue-600 text-2xl" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-blue-700">FiInventory</span>
+          <span className="self-center text-2xl font-semibold whitespace-nowrap text-blue-700">
+            InvetiFi
+          </span>
         </Link>
         <button
           type="button"

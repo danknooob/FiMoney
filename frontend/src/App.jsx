@@ -17,7 +17,7 @@ function App() {
         <Navbar />
         <Toaster position="top-center" reverseOrder={false} />
         <header className="app-header">
-          <h1>FiInventory</h1>
+          <h1>InvetiFi</h1>
           <p className="subtitle">Unique Inventory Management Tool</p>
         </header>
         <main>

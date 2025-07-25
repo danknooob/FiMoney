@@ -1,4 +1,4 @@
-# FiInventory – Unique Inventory Management Tool
+# InvetiFi – Unique Inventory Management Tool
 
 A modern, full-stack inventory management solution for small businesses, built with the MERN stack (MongoDB, Express, React, Node.js) and Tailwind CSS. This project features JWT authentication, product management, pagination, rate limiting, and a beautiful, responsive UI.
 
@@ -24,7 +24,7 @@ A modern, full-stack inventory management solution for small businesses, built w
 
 ## 📦 Project Structure
 ```
-FiMoney/
+InvetiFi/
   backend/
     ... (Express API, models, controllers, routes, middleware, swagger.json)
   frontend/
@@ -42,8 +42,8 @@ FiMoney/
 
 ### 1. Clone the repository
 ```sh
-git clone https://github.com/danknoob/FiMoney.git
-cd FiMoney
+git clone https://github.com/danknoob/InvetiFi.git
+cd InvetiFi
 ```
 
 ### 2. Backend Setup
