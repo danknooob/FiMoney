@@ -42,7 +42,7 @@ FiMoney/
 
 ### 1. Clone the repository
 ```sh
-git clone https://github.com/your-username/FiMoney.git
+git clone https://github.com/danknoob/FiMoney.git
 cd FiMoney
 ```
 
