@@ -122,18 +122,10 @@ A Python test script is provided to verify all backend endpoints.
   Get Products: PASSED (Quantity = 15)
   ```
 
-
-
 #### **Troubleshooting**
 - If you see 404 errors, make sure your backend exposes both `/register` and `/api/auth/register` (and similar for other endpoints).
 - If you see 401 errors, check your JWT secret and token handling.
 - If you see 500 errors, check your backend terminal for stack traces.
-
----
-
-## 🚀 Deployment
-- You can deploy the backend (Render, Heroku, etc.) and frontend (Vercel, Netlify, etc.) easily.
-- Make sure to update your environment variables for production.
 
 ---
 
