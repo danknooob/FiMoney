@@ -18,7 +18,7 @@ A modern, full-stack inventory management solution for small businesses, built w
 ## 🛠️ Tech Stack
 - **Backend:** Node.js, Express, MongoDB, Mongoose, JWT, Joi, Swagger
 - **Frontend:** React, Vite, Tailwind CSS, Redux Toolkit
-- **Other:** dotenv, express-rate-limit, CORS
+- **Other:** dotenv, express-rate-limit, CORS, Docker, Docker Compose
 
 ---
 
@@ -31,6 +31,7 @@ FiMoney/
     ... (React app, components, store, slices, Tailwind config)
   test/
     test_api.py
+  docker-compose.yml
   README.md
   postman_collection.json
 ```
@@ -41,7 +42,7 @@ FiMoney/
 
 ### 1. Clone the repository
 ```sh
-git clone <your-repo-url>
+git clone https://github.com/your-username/FiMoney.git
 cd FiMoney
 ```
 
@@ -61,6 +62,29 @@ npm install
 npm run dev
 ```
 - The frontend runs on `http://localhost:5173` by default.
+
+---
+
+## 🐳 Docker Setup
+
+**Prerequisite:**
+- You must have [Docker Desktop](https://www.docker.com/products/docker-desktop/) (includes Docker and Docker Compose) installed on your system.
+- Download and install Docker for [Windows/Mac](https://www.docker.com/products/docker-desktop/) or [Linux](https://docs.docker.com/engine/install/).
+
+You can run the entire stack (backend, frontend, and MongoDB) using Docker and Docker Compose.
+
+### **Build and Run with Docker Compose**
+```sh
+docker-compose up --build
+```
+- **Frontend:** http://localhost:3000
+- **Backend:** http://localhost:8080
+- **MongoDB:** localhost:27017
+
+### **Stopping the Containers**
+```sh
+docker-compose down
+```
 
 ---
 
